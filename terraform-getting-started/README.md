@@ -25,7 +25,7 @@ All the platforms supported is based on the concept of Terraform Providers. Actu
 
 Terraform Providers define what kind of resouces can be deployed on a supported platform. For example, on Amazon Web Services you can create Virtual Machines, Load Balancers, VPCs, S3 Buckets, RDS instances, Lambda functions and a huge list of cloud resources. Just take a look at the [AWS Terraform Provider documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) to have a bare idea.
 
-## How can I install Terraorm?
+## How can I install Terraform?
 
 Go to [https://www.terraform.io/](https://www.terraform.io/) and click on "Download CLI" button. Choose the right URL of the installer for your operating system. As Terraform is a CLI tool, it consists of just a single binary which is gotten as a ZIP file from [https://www.terraform.io/downloads.html](https://www.terraform.io/downloads.html)
 
@@ -80,7 +80,7 @@ Create a directory called *example1* and a *main.tf* inside with a content like 
 #
 # Every Terraform resource is formed by a "resource" block with two arguments:
 #
-#  - "local_file" is the name of the Terraform provider which only creates local files
+#  - "local_file" is the name of the resource type, which in this case, it only creates local files
 #  - "myfile1" is any logical name chosen for our resource. This name must be unique among
 #    all .tf files in the current directory
 #
