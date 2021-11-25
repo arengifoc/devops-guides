@@ -1,0 +1,15 @@
+#!/usr/bin/expect
+set timeout -1
+spawn /root/test.sh
+
+expect -exact "Ingrese su nombre:"
+send -- "Angel Rengifo\r"
+
+expect -exact "Ingrese su email:"
+send -- "arengifo@midominio.net\r"
+
+expect -exact "Desea recibir un reporte diario a su email? \[s/n\]:"
+send -- "n\r"
+
+# expect eof
+interact
